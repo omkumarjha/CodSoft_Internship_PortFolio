@@ -13,17 +13,17 @@
 
 #navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: black;
+    height: 80px;
     color: white;
-    box-shadow: 3px 2px 8px #645656;
+    box-shadow: 1px 1px 1px #645656;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 body {
-    background-color: rgb(30, 24, 24);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(31, 41, 55));
+    border: 2px solid red;    
 }
 
 #navbar ul {
@@ -31,16 +31,79 @@ body {
 }
 
 #navbar ul li {
-    margin: 0px 20px;
+    margin: 0px 30px;
     list-style: none;
+    font-size: 18px;
 }
 
 #navbar ul li a {
     text-decoration: none;
     color: white;
+    transition: color 0.7s ease;
 }
 
-#navbar .left{
-    font-size: 1.3rem;
+#navbar ul li a:hover{
+    color: rgb(164, 164, 193);
+}
+
+#navbar .left {
+    font-size: 1.8rem;
     cursor: pointer;
+    margin: 0px 35px;
+}
+
+#navbar .right {
+    margin: 0px 35px;
+}
+
+
+/* section 1 css */
+#home {
+    border: 2px solid white;
+    max-width: 90vw;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    justify-content: space-evenly;
+}
+
+#home .leftside img {
+    width: 270px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.blue {
+    color: rgb(112, 112, 157);
+}
+
+.rightside {
+    color: white;
+    font-size: 3.3rem;
+    line-height: 4rem
+}
+
+#element{
+    color: rgb(112, 112, 157);
+}
+
+/* About Section  */
+
+#about{
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+}
+
+#about .text{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 20px 0px;
+}
+
+#about > h1{
+    font-size: 3rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
