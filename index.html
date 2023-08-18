@@ -30,36 +30,66 @@
 
     <main>
         <!-- Home | which contains profile and little emperience -->
-        <section id="home">
+        <section id="section1">
 
-            <div class="leftside">
-                <!-- <img src="img/om.jpeg" alt="Profile"> -->
-            </div>
+            <div id="home">
+                <div class="leftside">
+                    <img src="img/bg3.png" alt="Profile">
+                </div>
 
-            <div class="rightside">
-                Hi, My name is <span class="blue">Om</span>
-                <div>and I am a passionate</div>
-                <span id="element"></span> <!-- Element to contain animated typing -->
+                <div class="rightside">
+                    Hi, My name is <span class="blue">Om</span>
+                    <div>and I am a passionate</div>
+                    <span id="element"></span> <!-- Element to contain animated typing -->
+                </div>
             </div>
 
         </section>
 
-        <div id="about">
-            <h1>About</h1>
-            <div class="text1 text">
-              <h3>  Hello! I'm Srinath , a passionate and creative Front-End Developer with a solid two years of experience
-                in crafting immersive and user-friendly web experiences.</h3>
+        <!-- About section of the website  -->
+
+        <section id="section2">
+
+            <div id="about">
+                <h1>About</h1>
+                <div class="text1 text">
+                    <h3> Hello! I'm Om , a passionate and creative Front-End Developer having Experience of 10+
+                        Front-End
+                        projects </h3>
+                </div>
+
+                <div class="text2 text">
+                    <h3>As a Front End Web developer, I enjoy tackling new challenges and continuously
+                        expanding my skillset.</h3>
+                </div>
+
+                <div class="text3 text">
+                    <h3>I have a passion for working with Html , Css , Javascript and have Experience of Django in
+                        backend
+                        and I am also interested in building new Web Technologies and Software.</h3>
+                </div>
+
             </div>
 
-            <div class="text2 text"><h3>As a Front End Web developer, I enjoy tackling new challenges and continuously
-                expanding my skillset.</h3></div>
+        </section>
 
-            <div class="text3 text">
-                <h3>I have a passion for working with Html , Css , Javascript and modern Javascript libraries and frameworks
-                    like React.js and Redux I am also interested in building new Web Technologies and Software.</h3>
+        <!-- Projects section -->
+
+        <section id="section3">
+            <h1>Projects</h1>
+
+            <div id="projects">
+                <h2>Check out some of my work right here</h2>
+
+                <div class="project-item">
+                    <div class="project-image"></div>
+                    <div class="project-title"></div>
+                    <div class="project-desc"></div>
+                </div>
+                
             </div>
 
-        </div>
+        </section>
 
     </main>
 
@@ -70,7 +100,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['FrontEnd Devloper', 'Django Developer', 'Problem Solver'],
+            strings: ['FrontEnd Developer', 'Django Developer', 'Problem Solver'],
             typeSpeed: 50,
         });
     </script>
