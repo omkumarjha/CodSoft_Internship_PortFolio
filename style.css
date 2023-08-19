@@ -31,6 +31,8 @@ body {
     background-color: black;
 }
 
+
+
 #navbar ul {
     display: flex;
 }
@@ -39,15 +41,15 @@ body {
     margin: 0px 30px;
     list-style: none;
     font-size: 18px;
+    transition: transform 0.2s ease-in;
+}
+
+#navbar ul li:hover{
+    transform: scale(1.05);
 }
 
 #navbar ul li a {
     text-decoration: none;
-    color: white;
-    transition: color 0.7s ease;
-}
-
-#navbar ul li a:hover {
     color: rgb(164, 164, 193);
 }
 
@@ -131,36 +133,77 @@ body {
 
 #projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
     grid-gap: 20px;
 }
 
 .project-item {
     /* border: 2px solid yellow; */
     margin: 20px 0px;
-    border: 1px solid grey;
+    box-shadow: 0px 3px 8px gray;
 }
 
 .project-image img{
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.2s ease-in;
 }
 
+.project-image img:hover{
+    transform: scale(1.03);
+}
+
+
 #section3 > h2 {
-    margin: 15px 0px;
+    margin: 30px 0px;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .demo {
-    margin: 20px 0px;
-    background: blue;
-    color: white;
-    padding: 5px 10px;
-    font-size: 1rem;
+    margin: 10px 0px;
+    background: rgb(59, 130, 246);
+    color: rgb(219, 234, 254);
+    padding: 6px 19px;
+    font-size: 1.1rem;
     cursor: pointer;
+    border: 0 solid #e5e7eb;
+    border-radius: 0.2rem;
+}
+
+.demo a{
+    color: rgb(219, 234, 254);
+    text-decoration: none;
 }
 
 .bottom{
     padding: 1rem;
+}
+
+.project-desc{
+    margin: 10px 0px;
+    height: 140px;
+    /* Agar content overflow kar raha hai to uspe y mai scrollbar add karne ke liye */
+    overflow-y: scroll; 
+}
+
+/* Below code chrome ke andar se agar koi element ka scrollbar remove karna hai but uske content ko scroll kiya jaaye */
+.project-desc::-webkit-scrollbar{  
+    display: none;
+}
+
+/* Below code firefox ke andar se koi element ka scroll baar hatane mai madat karta hai  */
+html{
+    scrollbar-width: none;
+}
+
+.project-desc{
+    scrollbar-width: none;
+    line-height: 1.5rem;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.project-title h2{
+    color: rgb(37, 99, 235);
 }
