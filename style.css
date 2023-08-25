@@ -310,7 +310,7 @@ form input:focus , textarea:focus{
 
 .icons ul li{
     list-style: none;
-    margin: 20px 10px;
+    margin: 17px 10px 0px 10px;
 }
 
 .icons svg{
