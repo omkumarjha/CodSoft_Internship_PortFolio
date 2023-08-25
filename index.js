@@ -12,7 +12,9 @@ const formSubmit = () => {
 // Hamburger JS
 let hamburger = document.querySelector(".svg-parent");
 let right = document.querySelector(".right");
+let left = document.querySelector(".left");
 
 hamburger.addEventListener("click",()=>{
     right.classList.toggle("display-none")
+    left.classList.toggle("display-none")
 })

@@ -10,7 +10,8 @@
         display: block;
     }
     #navbar{
-        min-height: 57px;
+        min-height: 55px;
+        transition: min-height 1s ease;
     }
     #navbar .left{
         font-size: 2rem;
@@ -18,5 +19,127 @@
     }
     .display-none{
         display: none;
+    }
+    #iconsLink li{ 
+        margin-left: -120px !important;
+    }
+    #iconsLink svg{
+        width: 29px;
+        height: 29px;
+    }
+}
+
+@media(max-width: 1150px){
+    #home .leftside img{
+        width: 290px;
+        border-radius: 183px;
+    }
+    #home{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .rightside{
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 750px){
+    .rightside{
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+    .leftside img{
+        width: 270px !important;
+    }
+    #section3>h1 , #about > h1 , #section4 h1 , #contact h1{
+        font-size : 2.2rem;
+    }
+    #about .text h3{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin: -5px 0px;
+    }
+    .iconBlock h3{
+        font-size: 1.1rem;
+    }
+    .iconBlock img{
+        width: 4.5rem;
+    }
+    #section3, #section4,#contact{
+        margin-top: 100px;
+    }
+    #section3 > h2 , #section4 > h2 , #contact h2{
+        margin: 20px 0px;
+        font-size: 1.2rem;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    .submit{
+        font-size: 1.1rem;
+        padding: 6px 15px;
+        margin: 20px 0px;
+    }
+    #iconsLink{
+        top: 100px;
+    }
+}
+
+@media(max-width: 550px){
+    #section3>h1 , #about > h1 , #section4 h1 , #contact h1{
+        font-size : 2rem;
+    }
+    .iconBlock h3{
+        font-size: 1rem;
+    }
+    .iconBlock img{
+        width: 4rem !important;
+    }
+    main{
+        max-width: 90vw;
+        margin: auto;
+    }
+    .rightside{
+        font-size: 2.1rem !important;
+        line-height: 3.2rem;
+    }
+    .leftside img{
+        width: 250px !important;
+    }
+    #section3, #section4,#contact{
+        margin-top: 75px;
+    }
+    #home{
+        margin-bottom: 100px;
+    }
+    footer{
+        font-size: 20px;
+    }
+    .submit{
+        font-size: 1rem;
+        padding: 6px 11px;
+        margin: 15px 0px;
+    }
+    #iconsLink{
+        display: none;
+    }
+    .icons{
+        display: block;
+    }
+    .icons svg{
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media(max-width: 450px){
+    #skills, #projects{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .iconBlock img{
+        width: 3.5rem !important;
     }
 }
