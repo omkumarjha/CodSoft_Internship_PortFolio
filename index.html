@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -15,13 +16,19 @@
         <nav id="navbar">
             <div class="left">Om's Portfolio</div>
 
-            <div class="right">
+            <div class="right display-none">
                 <ul>
                     <li><a href="#section1">Home</a></li>
                     <li><a href="#section2">About</a></li>
                     <li><a href="#section3">Projects</a></li>
+                    <li><a href="#section4">Skills</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
+            </div>
+            <div class="svg-parent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" onclick="func()">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
             </div>
         </nav>
     </header>
@@ -50,7 +57,7 @@
 
         <div id="iconsLink">
             <ul>
-                <li style="border-top-right-radius: 8px;">
+                <li style="border-top-right-radius: 6px;">
                     <a href="https://www.linkedin.com/in/om-kumar-6027a0224/" target="_blank">
                         LinkedIn
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
@@ -72,8 +79,8 @@
                         </svg>
                     </a>
                 </li>
-                <li style="border-bottom-right-radius: 8px;">
-                    <a href="">
+                <li style="border-bottom-right-radius: 6px;">
+                    <a href="omkumarjha_Resume.pdf" download="Om'sResume">
                         Resume
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="30"
                             width="30" xmlns="http://www.w3.org/2000/svg">

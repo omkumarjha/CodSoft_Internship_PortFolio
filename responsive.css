@@ -1,0 +1,22 @@
+@media(max-width: 1000px){
+    #navbar ul,#navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul li{
+        margin: 15px 0px;
+    }
+    .svg-parent{
+        display: block;
+    }
+    #navbar{
+        min-height: 57px;
+    }
+    #navbar .left{
+        font-size: 2rem;
+        margin: 10px 30px;
+    }
+    .display-none{
+        display: none;
+    }
+}
