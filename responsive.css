@@ -9,16 +9,9 @@
     .svg-parent{
         display: block;
     }
-    #navbar{
-        min-height: 55px;
-        transition: min-height 1s ease;
-    }
     #navbar .left{
         font-size: 2rem;
         margin: 10px 30px;
-    }
-    .display-none{
-        display: none;
     }
     #iconsLink li{ 
         margin-left: -120px !important;
@@ -26,6 +19,16 @@
     #iconsLink svg{
         width: 29px;
         height: 29px;
+    }
+    #navbar{
+        height: 350px;
+        transition: all 0.4s ease-out;
+    }
+    .h-navbar{
+        height: 55px !important;
+    }
+    .v-hidden{
+        opacity: 0;
     }
 }
 
@@ -113,7 +116,7 @@
         margin-top: 75px;
     }
     #home{
-        margin-bottom: 75px;
+        margin-bottom: 100px;
         margin-top: 45px;
     }
     footer{
@@ -146,5 +149,8 @@
     #section3 > h2 , #section4 > h2 , #contact h2{
         margin: 17px 0px;
         font-size: 1.1rem;
+    }
+    #home{
+        min-height: unset;
     }
 }
